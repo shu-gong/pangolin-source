@@ -1,6 +1,6 @@
 get_filename_component(COMPONENT ${CMAKE_CURRENT_LIST_DIR} NAME)
 
-find_package(Eigen3 REQUIRED QUIET)
+find_package(Eigen3 REQUIRED NO_MODULE)
 if (Eigen3_FOUND)
     message("-- Found Eigen version ${Eigen3_VERSION}: ${Eigen3_DIR}")
     if (CMAKE_SYSTEM_PROCESSOR MATCHES "^(aarch64.*|AARCH64.*)" AND
